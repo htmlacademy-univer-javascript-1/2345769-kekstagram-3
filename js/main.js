@@ -32,5 +32,14 @@ function getUser() {
     likes: getRandomPositiveInteger(15, 201),
     comments: getRandomPositiveInteger(0, 201)
   }
-
 }
+
+function getUsers(){
+  const arrayUsers = []
+  for (let i = 0; i < 25; i++) {
+    arrayUsers[i] = getUser();
+  }
+  return arrayUsers;
+}
+
+getUsers();
