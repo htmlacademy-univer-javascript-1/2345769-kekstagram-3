@@ -27,4 +27,3 @@ function getUsers(){
     arrayUsers[i] = getUser(i, i);
   }
   return arrayUsers;
-}
