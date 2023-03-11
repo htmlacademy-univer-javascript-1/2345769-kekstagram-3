@@ -1,14 +1,29 @@
+function checkStringLength (string, length) {
+    return string.length <= length;
+}
 
+function getRandomPositiveInteger (a, b) {
+    const lower = Math.ceil(Math.min(Math.abs(a), Math.abs(b)));
+    const upper = Math.floor(Math.max(Math.abs(a), Math.abs(b)));
+    const result = Math.random() * (upper - lower + 1) + lower;
+    return Math.floor(result);
+}
 
-function randomNum(min, max) {
-  try {
-    if (min >= max){throw e;}
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  } catch (err){
-    return 0;
+const descriprion = ['круто', 'бээ'];
+
+function getUser(id, url) {
+  return {
+    id: id,
+    url: `photos/${url}.jpg`,
+    descriprion: descriprion[getRandomPositiveInteger(0, 1)],
+    likes: getRandomPositiveInteger(15, 201),
+    comments: getRandomPositiveInteger(0, 201)
   }
 }
 
-function maxLenghtLines(line, maxLength){
-  return line.length <= maxLength;
-}
+function getUsers(){
+  const arrayUsers = []
+  for (let i = 1; i <= 25; i++) {
+    arrayUsers[i] = getUser(i, i);
+  }
+  return arrayUsers;
