@@ -9,28 +9,22 @@ function getRandomPositiveInteger (a, b) {
     return Math.floor(result);
 }
 
-let id = 0;
-let url = 0;
-
 const descriprion = ['круто', 'бээ'];
 
-function getId () {
-  id++;
-  return id;
-}
-
-function getUrl () {
-  url++;
-  return `photos/${url}.jpg`;
-}
-
-function getUser() {
+function getUser(id, url) {
   return {
-    id: getId(),
-    url: getUrl(),
+    id: id,
+    url: `photos/${url}.jpg`,
     descriprion: descriprion[getRandomPositiveInteger(0, 1)],
     likes: getRandomPositiveInteger(15, 201),
     comments: getRandomPositiveInteger(0, 201)
   }
+}
 
+function getUsers(){
+  const arrayUsers = []
+  for (let i = 1; i <= 25; i++) {
+    arrayUsers[i] = getUser(i, i);
+  }
+  return arrayUsers;
 }
