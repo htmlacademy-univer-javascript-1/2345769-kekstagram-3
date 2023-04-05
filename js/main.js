@@ -1,5 +1,4 @@
-import './util.js'
-import { arrayUsers } from "./data";
-import { createThumbnails } from "./renderingThumbnails";
+import { arrayUsers } from "./data.js";
+import { createThumbnails } from "./renderingThumbnails.js";
 
 createThumbnails(arrayUsers);
