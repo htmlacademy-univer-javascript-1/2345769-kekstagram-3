@@ -1,4 +1,4 @@
-import { getRandomPositiveInteger} from "./util";
+import { getRandomPositiveInteger} from "./util.js";
 const descriprion = ['круто', 'бээ'];
 
 function getUser(id, url) {
