@@ -26,4 +26,4 @@ function getUsers(){
   for (let i = 1; i <= 25; i++) {
     arrayUsers[i] = getUser(i, i);
   }
-  return arrayUsers;
+  return arrayUsers};
