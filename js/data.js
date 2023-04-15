@@ -19,6 +19,6 @@ function getUsers(){
   return arrayUsers;
 }
 
-const arrayUsers = getUsers;
+const arrayUsers = getUsers();
 
 export{arrayUsers};
