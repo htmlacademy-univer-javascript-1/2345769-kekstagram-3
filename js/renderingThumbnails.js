@@ -1,16 +1,16 @@
-const pictures = document.querySelector('.pictures');
 const template = document.querySelector('#picture').content;
-const docFragment = document.createDocumentFragment();
+const documentFragment = document.createDocumentFragment();
+const pictures = document.querySelector('.pictures');
 
 const createThumbnails = (data) => {
-  Object.keys(data).forEach((i) => {
-    const pic = template.cloneNode(true);
-    pic.querySelector('.pictures__img').src = i.url;
-    pic.querySelector('.picture__likes').textContent = i.likes;
-    pic.querySelector('.picture__comments').textContent = i.comments.length;
-    docFragment.append(pic);
+  data.forEach((image) => {
+    const picture = template.cloneNode(true);
+    picture.querySelector('.picture__img').src = image.url;
+    picture.querySelector('.picture__likes').textContent = image.likes;
+    picture.querySelector('.picture__comments').textContent = image.comments.length;
+    documentFragment.append(picture);
   });
-  pictures.append(docFragment)
+  pictures.append(documentFragment);
 };
 
 export {createThumbnails};
