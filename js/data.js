@@ -15,7 +15,7 @@ function getUsers(){
   const returnedArrayUsers = [];
   for (let i = 1; i <= 25; i++) {
     returnedArrayUsers[i] = getUser(i, i);
-  };
+  }
   return returnedArrayUsers;
 }
 
