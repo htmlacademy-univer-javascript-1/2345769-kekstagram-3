@@ -1,4 +1,4 @@
-import { getRandomPositiveInteger} from "./util.js";
+import { getRandomPositiveInteger} from './util.js';
 const descriprion = ['круто', 'бээ'];
 
 function getUser(id, url) {
@@ -9,15 +9,15 @@ function getUser(id, url) {
     likes: getRandomPositiveInteger(15, 201),
     comments: getRandomPositiveInteger(0, 201)
   }
-}
+};
 
 function getUsers(){
-  const arrayUsers = []
+  const returnedArrayUsers = []
   for (let i = 1; i <= 25; i++) {
     arrayUsers[i] = getUser(i, i);
   }
   return arrayUsers;
-}
+};
 
 const arrayUsers = getUsers();
 

@@ -1,6 +1,6 @@
-let uplButton = document.querySelector('#upload-file');
-let uplOverlay = document.querySelector('.img-upload__overlay');
-let uplCancel = document.querySelector('#upload-cancel');
+const uplButton = document.querySelector('#upload-file');
+const uplOverlay = document.querySelector('.img-upload__overlay');
+const uplCancel = document.querySelector('#upload-cancel');
 
 uplButton.addEventListener('change', ()=>{
   uplOverlay.classList.remove('hidden');
