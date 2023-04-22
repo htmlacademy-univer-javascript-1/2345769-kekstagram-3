@@ -8,16 +8,16 @@ function getUser(id, url) {
     descriprion: descriprion[getRandomPositiveInteger(0, 1)],
     likes: getRandomPositiveInteger(15, 201),
     comments: getRandomPositiveInteger(0, 201)
-  }
-};
+  };
+}
 
 function getUsers(){
-  const returnedArrayUsers = []
+  const returnedArrayUsers = [];
   for (let i = 1; i <= 25; i++) {
     returnedArrayUsers[i] = getUser(i, i);
-  }
+  };
   return returnedArrayUsers;
-};
+}
 
 const arrayUsers = getUsers();
 
