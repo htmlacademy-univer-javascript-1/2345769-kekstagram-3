@@ -2,7 +2,7 @@
 import { arrayUsers } from './data.js';
 import { createThumbnails } from './renderingThumbnails.js';
 import './effect.js';
-import './scale.js'
+import './scale.js';
 
 createThumbnails(arrayUsers);
 
