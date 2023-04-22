@@ -14,9 +14,9 @@ function getUser(id, url) {
 function getUsers(){
   const returnedArrayUsers = []
   for (let i = 1; i <= 25; i++) {
-    arrayUsers[i] = getUser(i, i);
+    returnedArrayUsers[i] = getUser(i, i);
   }
-  return arrayUsers;
+  return returnedArrayUsers;
 };
 
 const arrayUsers = getUsers();
