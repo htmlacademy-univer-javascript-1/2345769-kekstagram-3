@@ -1,4 +1,4 @@
-import { resetFilter } from "./effect.js";
+import { resetFilter } from './effect.js';
 
 const uplButton = document.querySelector('#upload-file');
 const uplOverlay = document.querySelector('.img-upload__overlay');
