@@ -10,6 +10,12 @@
           "-ms-text-size-adjust"
         ]
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   }
 }
