@@ -1,3 +1,5 @@
+import { getPictures } from "./api.js";
+
 const template = document.querySelector('#picture').content;
 const documentFragment = document.createDocumentFragment();
 const pictures = document.querySelector('.pictures');
@@ -13,4 +15,4 @@ const createThumbnails = (data) => {
   pictures.append(documentFragment);
 };
 
-export {createThumbnails};
+getPictures(createThumbnails);

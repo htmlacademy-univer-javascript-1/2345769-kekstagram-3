@@ -1,8 +1,5 @@
-//Задание 7 часть 2
-import { arrayUsers } from './data.js';
-import { createThumbnails } from './renderingThumbnails.js';
-import './effect.js';
+import './renderingThumbnails.js';
 import './scale.js';
-
-createThumbnails(arrayUsers);
-
+import './ovrl.js';
+import './effect.js';
+import './hadlr.js';
