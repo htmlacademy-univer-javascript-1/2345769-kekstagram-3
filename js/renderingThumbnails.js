@@ -1,4 +1,4 @@
-import { getPictures } from "./api.js";
+import { getPictures } from './api.js';
 
 const template = document.querySelector('#picture').content;
 const documentFragment = document.createDocumentFragment();
